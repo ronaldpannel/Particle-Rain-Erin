@@ -21,7 +21,7 @@ class Particle {
     this.y = Math.floor(Math.random() * this.effect.height);
     this.velX = 0
     this.velY = Math.random() * 0.5 + 0.5
-    this.rad = Math.floor(Math.random() * 5 + 2.5);
+    this.rad = Math.floor(Math.random() * 10 + 10);
   }
   draw(ctx) {
     ctx.beginPath();
@@ -44,7 +44,7 @@ class Effect {
   constructor(width, height) {
     this.width = width;
     this.height = height;
-    this.numParticles = 8000;
+    this.numParticles = 1000;
     this.particleArray = [];
     this.init()
   }
